@@ -4033,3 +4033,20 @@ input, select, textarea {
 section[id] {
   scroll-margin-top: 0px; /* Adjust this value if needed */
 }
+
+/* Targets: retain template table sizing and scroll within its wrapper. */
+#targets .targets-table th,
+#targets .targets-table td {
+  white-space: nowrap;
+}
+
+#targets .targets-table tbody th {
+  padding: 0.75em;
+  font-weight: normal;
+  color: inherit;
+}
+
+#targets .table-wrapper:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 4px;
+}
